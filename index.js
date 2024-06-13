@@ -1,7 +1,7 @@
 // LAST UPDATED CHECK
 
 const desiredRepo = "rykerdevkid.github.io/Ryker-Sage/";
-const dateTagClass = ".date"; // The HTML element you want to update
+const dateTagClass = ".last-updated"; // The HTML element you want to update
 
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function()
