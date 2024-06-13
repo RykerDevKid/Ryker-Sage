@@ -66,6 +66,22 @@
 
 /* MAIN CODE - DESKTOP */
 
+.last-updated {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+}
+
+p {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 15px;
+    font-weight: 1000;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+}
+
 .typewriter {
     margin: 5% auto;
     display: flex;
@@ -86,22 +102,6 @@
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(255, 141, 141) }
-}
-
-.last-updated {
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-}
-
-p {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-    font-size: 15px;
-    font-weight: 1000;
-    text-align: center;
-    bottom: 0;
-    left: 0;
 }
 
 /* DEVICE CHECK */
