@@ -88,14 +88,14 @@
     50% { border-color: rgb(255, 141, 141) }
 }
 
-#last-updated{
+.last-updated{
     display: block;
     margin: 0 auto;
     position: absolute;
     bottom: 0;
 }
 
-#last-updated p{
+.last-updated p{
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     font-size: 15px;
     font-weight: 1000;
