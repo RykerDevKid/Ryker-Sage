@@ -5,24 +5,49 @@
     margin: 0px;
     overflow: hidden;
 }
-.navbar a{
+.navbar a:not(.kofi):not(.discord-a){
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+.navbar a:not(.home){
+    color: white;
+}
+.navbar a:not(.home):not(.kofi):not(.discord-a):hover{
+    background-color: rgb(23, 23, 23);
+}
+
+.kofi:hover {
+    background-color: rgb(255, 111, 111);
+}
+.kofi {
+    background-color: rgb(255, 141, 141);
+    border-radius: 12px;
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     font-weight: 1000;
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
-}
-.navbar a:not(.home){
-    color: white;
-}
-.navbar a:not(.home):not(.kofi):hover{
-    background-color: rgb(23, 23, 23);
-}
-.kofi:hover {
-    background-color: rgb(255, 141, 141);
     float: right;
 }
+.discord-a:hover {
+    background-color: rgb(61, 37, 225);
+}
+.discord-a {
+    background-color: rgb(61, 67, 255);
+    border-radius: 12px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    float: right;
+}
+
 .home {
     background-color: rgb(255, 255, 255);
     font-size: larger;
@@ -60,8 +85,25 @@
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange }
+    50% { border-color: rgb(255, 141, 141) }
 }
+
+.last-updated{
+    position: absolute;
+    display: block;
+    top: 100%;
+    transform: translateY(-100%);
+    justify-content: center;
+}
+
+.last-updated p{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 15px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+/* DEVICE CHECK */
 
 @media (max-width: 660px) {
     .navbar{
