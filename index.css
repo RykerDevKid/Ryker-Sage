@@ -1,0 +1,81 @@
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(45, 45, 45);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:not(.home){
+    color: white;
+}
+.navbar a:not(.home):hover{
+    background-color: rgb(23, 23, 23);
+}
+.home {
+    background-color: rgb(255, 255, 255);
+    font-size: larger;
+    color: black;
+}
+.navbar li{
+    float: left;
+}
+.navbar li:is(.discord, .kofi){
+    float: right;
+}
+
+.error-mobile{
+    display: none;
+}
+
+/* MAIN CODE - DESKTOP */
+
+.typewriter {
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter h1{
+    margin: 0 auto;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-family: monospace;
+    letter-spacing: .15em;
+    animation:
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+@media (max-width: 660px) {
+    .navbar{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    
+    /* MAIN CODE - MOBILE */
+
+    .error-mobile{
+        font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+        font-size: 20px;
+        font-weight: 1000;
+        display: block;
+    }
+
+}
+
+/* ACTUAL PAGE */
