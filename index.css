@@ -16,8 +16,12 @@
 .navbar a:not(.home){
     color: white;
 }
-.navbar a:not(.home):hover{
+.navbar a:not(.home):not(.kofi):hover{
     background-color: rgb(23, 23, 23);
+}
+.kofi:hover {
+    background-color: rgb(255, 141, 141);
+    float: right;
 }
 .home {
     background-color: rgb(255, 255, 255);
@@ -27,7 +31,7 @@
 .navbar li{
     float: left;
 }
-.navbar li:is(.discord, .kofi){
+.navbar li:is(.discord, .kofi-li){
     float: right;
 }
 
