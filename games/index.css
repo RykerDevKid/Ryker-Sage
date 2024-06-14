@@ -18,6 +18,9 @@
 .navbar a:not(.home){
     color: white;
 }
+.navbar a:is(.games){
+    color: rgb(255, 141, 141);
+}
 .navbar a:not(.home):not(.kofi):not(.discord-a):hover{
     color: rgb(255, 141, 141);
 }
@@ -70,39 +73,9 @@
     display: none;
 }
 
-/* MAIN CODE - DESKTOP */
+/* MAIN CODE */
 
 
-.main ul {
-    list-style-type: none;
-    padding: 0px;
-    
-    margin: 5% auto;
-    overflow: hidden;
-}
-
-.main p {
-    text-align: center;
-    font-size: 25px;
-    
-    font-family: monospace;
-    letter-spacing: .15em;
-}
-
-.line-2 {
-    border-right: .15em solid orange;
-    display: table;
-    margin: 0 auto;
-    overflow: hidden;
-    white-space: nowrap;
-    animation:
-        blink-caret .75s step-end infinite;
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(255, 141, 141) }
-}
 
 /* DEVICE CHECK */
 
