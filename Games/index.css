@@ -1,16 +1,18 @@
 .navbar ul{
     list-style-type: none;
-    background-color: rgb(45, 45, 45);
-    border: 5px solid rgb(45, 45, 45);
+    background-color: transparent;
+    border: 5px solid transparent;
     border-radius: 16px;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
 }
-.navbar a:not(.kofi):not(.discord-a){
+.navbar a:not(.kofi):not(.discord-a):not(.home){
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: black;
     border-radius: 12px;
     font-weight: 1000;
+    font-size: 20px;
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -18,11 +20,8 @@
 .navbar a:not(.home){
     color: white;
 }
-.navbar a:is(.games){
-    color: rgb(255, 141, 141);
-}
 .navbar a:not(.home):not(.kofi):not(.discord-a):hover{
-    color: rgb(255, 141, 141);
+    text-decoration: underline rgb(255, 141, 141);
 }
 
 .kofi:hover {
@@ -33,6 +32,7 @@
     border-radius: 12px;
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     font-weight: 1000;
+    font-size: 20px;
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -43,6 +43,7 @@
     background-color: rgb(61, 37, 225);
 }
 .discord-a {
+    font-size: 20px;
     background-color: rgb(61, 67, 255);
     border-radius: 12px;
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
@@ -55,18 +56,26 @@
 }
 
 .home {
-    background-color: rgb(255, 255, 255);
-    font-size: larger;
-    color: black;
+    background-color: rgb(45,45,45);
+
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: white;
+    border-radius: 12px;
+    font-weight: 1000;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
 }
 .navbar li{
     float: left;
+    margin-left: 6px;
 }
 .navbar li:is(.discord, .kofi-li){
     float: right;
     padding: 2px;
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 12px;
+    margin-right: 6px;
 }
 
 .error-mobile{
@@ -75,11 +84,85 @@
 
 /* MAIN CODE */
 
+.main h1 {
+    margin: 2.5% auto;
+    font-size: 40px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    text-align: center;
+}
 
+.main ul {
+    align-items: center;
+    display: table;
+    list-style-type: none;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0 auto;
+    padding-bottom: 75px;
+}
+
+.main li {
+    display: inline-block;
+}
+
+.main input[type=text] {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: 1000;
+    padding: 5px;
+    margin-top: 5%;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.main button {
+    padding: 5px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: 1000;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.games {
+    align-items: center;
+    display: table;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.games li {
+    display: table;
+    margin-top: 5px;
+}
+
+.games a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* DEVICE CHECK */
 
 @media (max-width: 660px) {
+    .navbar{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    
+    /* MAIN CODE - MOBILE */
+
+    .error-mobile{
+        font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+        font-size: 20px;
+        font-weight: 1000;
+        display: block;
+    }
+
+}
+
+@media (max-height: 768px) {
     .navbar{
         display: none;
     }
