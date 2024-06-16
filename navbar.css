@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 .navbar a:not(.kofi):not(.discord-a):not(.home){
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-family: 'Comic Sans MS', 'Comic Sans';
     color: black;
     border-radius: 12px;
     font-weight: 1000;
@@ -30,7 +30,7 @@
 .kofi {
     background-color: rgb(255, 141, 141);
     border-radius: 12px;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-family: 'Comic Sans MS', 'Comic Sans';
     font-weight: 1000;
     font-size: 20px;
     text-decoration: none;
@@ -46,7 +46,7 @@
     font-size: 20px;
     background-color: rgb(61, 67, 255);
     border-radius: 12px;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-family: 'Comic Sans MS', 'Comic Sans';
     font-weight: 1000;
     text-decoration: none;
     padding: 15px;
@@ -58,7 +58,7 @@
 .home {
     background-color: rgb(45,45,45);
 
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-family: 'Comic Sans MS', 'Comic Sans';
     color: white;
     border-radius: 12px;
     font-weight: 1000;
