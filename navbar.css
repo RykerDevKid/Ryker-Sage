@@ -103,7 +103,7 @@
 
 }
 
-@media (max-height: 768px) {
+@media (max-height: 660px) {
     .navbar{
         display: none;
     }
